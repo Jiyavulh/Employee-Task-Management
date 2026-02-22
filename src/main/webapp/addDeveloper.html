@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Developer</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .container {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        width: 320px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 14px;
+        color: #555;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background: #4facfe;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background: #007bff;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Add Developer</h2>
+
+    <form action="addDeveloper">
+        <label>Enter Name</label>
+        <input type="text" name="employee-name">
+
+        <label>Enter Email</label>
+        <input type="text" name="employee-email">
+
+        <label>Enter Password</label>
+        <input type="text" name="employee-password">
+
+        <label>Enter Phone Number</label>
+        <input type="text" name="employee-phonenumber">
+
+        <label>Enter Salary</label>
+        <input type="text" name="employee-salary">
+
+        <input type="submit" value="ADD DEVELOPER">
+    </form>
+</div>
+
+</body>
+</html>

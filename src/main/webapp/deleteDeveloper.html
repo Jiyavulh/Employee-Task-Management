@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Delete Developer</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ff4e50, #f9d423);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .container {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        width: 300px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 14px;
+        color: #555;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background: #ff4e50;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background: #e03e40;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Delete Developer</h2>
+
+    <form action="deleteDeveloper">
+        <label>Enter Developer ID</label>
+        <input type="text" name="employee-id">
+
+        <input type="submit" value="DELETE DEVELOPER">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Change Task Status</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .container {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        width: 320px;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 22px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #ff7e5f;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #e76447;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Change Task Status</h1>
+
+    <form action="changeTaskStatus" method="get">
+        <label>Enter Task ID:</label>
+        <input type="number" name="taskId" required>
+        <button type="submit">Update Status</button>
+    </form>
+</div>
+
+</body>
+</html>

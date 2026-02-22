@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Developer Options</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #0f2027, #2c5364);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .container {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        width: 320px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background: #0f2027;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background: #08161b;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Developer Updations</h2>
+
+    <form action="updateDeveloper.jsp">
+        <select name="update-option">
+            <option>Name</option>
+            <option>Email</option>
+            <option>PhoneNumber</option>
+        </select>
+        <input type="submit" value="NEXT">
+    </form>
+</div>
+
+</body>
+</html>
